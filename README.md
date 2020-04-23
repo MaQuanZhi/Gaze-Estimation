@@ -13,7 +13,7 @@ Authors summarize their contributuions to gaze estimation problem with three mai
 
 -  Confidence gated units is introduced to disregard faceial keypoint detections for which 
      a low confidence level is provided.
- #### 1.1. Proposed Approach
+   - 1.1. Proposed Approach
        
 
 ### b) Datasets
