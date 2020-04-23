@@ -5,7 +5,7 @@
     
    - Contributions
     
-     * Authors summarize their contributuions to gaze estimation problem with three main points:
+       Authors summarize their contributuions to gaze estimation problem with three main points:
     
        * They propose an approach that relies solely on the relative positions of  facial keypoints
          to estimate gaze direction. 
