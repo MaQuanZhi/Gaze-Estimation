@@ -3,7 +3,7 @@
 
 ### 1. Gaze Estimation for Assisted Living Environments(WACV-2020)
     
-    * Contributions
+    * ####Contributions
     
 Authors summarize their contributuions to gaze estimation problem with three main points:
 -  They propose an approach that relies solely on the relative positions of  facial keypoints
