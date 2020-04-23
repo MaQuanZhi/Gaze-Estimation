@@ -17,6 +17,8 @@
          a low confidence level is provided.
 
    * Proposed Approach
+        OpenPose is used to detect anatomical keypoints of all the persons preson in the scene.
+   
        
 
 ### b) Datasets
