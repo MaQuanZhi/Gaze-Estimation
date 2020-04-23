@@ -1,7 +1,7 @@
 # Gaze-Estimation
-### 1) Papers
+### a) Papers
 
-### a. Gaze Estimation for Assisted Living Environments(WACV-2020)
+### 1. Gaze Estimation for Assisted Living Environments(WACV-2020)
 
 Authors summarize their contributuions to gaze estimation problem with three main points:
 
@@ -13,7 +13,9 @@ Authors summarize their contributuions to gaze estimation problem with three mai
 
 -  Confidence gated units is introduced to disregard faceial keypoint detections for which 
      a low confidence level is provided.
+ #### 1.1. Proposed Approach
        
 
-### 2) Datasets
+### b) Datasets
+GazeFollow
 
