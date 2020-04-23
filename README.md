@@ -1,7 +1,7 @@
 # Gaze-Estimation
 ### 1) Papers
 
-### a. Gaze Estimation for Assisted Living Environments(WACV-2020)
+- ### a. Gaze Estimation for Assisted Living Environments(WACV-2020)
 
 Authors summarize their contributuions to gaze estimation problem with three main points:
 
