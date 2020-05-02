@@ -57,7 +57,11 @@
         ![numerical_results.phn](images/numerical_results.png)
         
         ![image_results.png](images/image_results.png)
-   
+        
+        Here, Geom model is a gemotric based method which applies hand-crafted techniques. GF-Model is 
+        the architecture described with paper of GazeFollow dataset. NET is the architecture defined here and
+        NET0 is a different version of NET which does not use prediction uncertanity provided by OpenPose. Results
+        over GazeFollow set2 shows that using uncertanity values increases accuracy by amount of 2.33 degree.
        
 
 ### b) Datasets
