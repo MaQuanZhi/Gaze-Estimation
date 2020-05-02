@@ -122,8 +122,8 @@
 ### b) Datasets
 ![datasets.png](images/datasets.png)
 
-### c) Competitions 
-### i.   MPII Gaze Dataset
-### ii.  UT Multiview
-### iii. Eye-Diap
+#### c) Competitions 
+#### i.   MPII Gaze Dataset
+#### ii.  UT Multiview
+#### iii. Eye-Diap
 
