@@ -76,6 +76,13 @@
        * A neural network for gaze estimation which reach to state-of-the-art results
 
    * Proposed Approach
+       Paper tries to generate a dataset for gaze estimation purpose. The claimed method for dataset generation 
+       includes eye-tracking glasses. The person will be used during dataset generation wear a eye-tracking glasses
+       and glasses will provided annotations. Then eye-glasses region is removed from image and removed region is 
+       filled by semantic image inpainting. Paper claims that inpaining improves gaze estimation accuracy. 
+       The proposed method block diagram can be seen below:
+
+   
    
 ### b) Datasets
 ![datasets.png](images/datasets.png)
