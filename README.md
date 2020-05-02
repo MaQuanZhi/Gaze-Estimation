@@ -84,6 +84,12 @@
        The block diagram of proposed method can be seen below:
        
        ![rt_gene_diag.png](images/rt_gene_diag.png)
+       
+       Deep learning based methods have different approcahes for gaze estimation. In these approaches, inputs
+       of the network can change. 
+       - Eye patches can be directly feed to a CNN for gaze estimation
+       - Eye patches and head pose information can be used for estimation purpose
+       - Eye patches, face image can be used for estimation purpose
 
    
    
