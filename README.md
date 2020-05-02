@@ -62,8 +62,12 @@
         the architecture described with paper of GazeFollow dataset. NET is the architecture defined here and
         NET0 is a different version of NET which does not use prediction uncertanity provided by OpenPose. Results
         over GazeFollow set2 shows that using uncertanity values increases accuracy by amount of 2.33 degree.
-       
-
+        
+### 1. RT-GENE: Real-Time Eye Gaze Estimation in Natural Environments (ECCV-2018)
+    
+   - Paper Repository: https://github.com/Tobias-Fischer/rt_gene
+   - Paper Link: http://openaccess.thecvf.com/content_ECCV_2018/papers/Tobias_Fischer_RT-GENE_Real-Time_Eye_ECCV_2018_paper.pd
+   
 ### b) Datasets
 GazeFollow
 
