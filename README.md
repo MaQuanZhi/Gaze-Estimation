@@ -115,6 +115,10 @@
        FC layer weights are initialized by Xavier initialization. Adam optimizer is used with learning rate of 0.001,
        b1=0.9,b2=0.95 and batch size of 256.
        
+   * Paper Results
+   
+       Paper reaches 4.3 +- 0.9 degree erro ove MPII Gaze Dataset and 5.1 +- 0.2 degree error over UT Multiview dataset.
+       
 
 
    
@@ -122,7 +126,7 @@
 ### b) Datasets
 ![datasets.png](images/datasets.png)
 
-#### c) Competitions 
+### c) Competitions 
 #### i.   MPII Gaze Dataset
 #### ii.  UT Multiview
 #### iii. Eye-Diap
