@@ -40,7 +40,9 @@
         Here, ci is the confidence score and qi is the x or y coordinates. For 5 coordinates of eyes,ears and nose
         10 CGU are used at input. Each (x,c) and (y,c) pair is fed to these 10 units. These results a feature vector 
         with dimension of (10,1). Then, 3 FC layer is used. These FC layers have 10,10 and 3 units. Final FC layer
-        provides gaze direction g=[g_x,g_y] and a confidence score for gaze estimation.
+        provides gaze direction g=[g_x , g_y] and a confidence score for gaze estimation.
+        
+        During network training, cosine uncertanity loss function is used. 
    
        
 
