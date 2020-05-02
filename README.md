@@ -42,7 +42,9 @@
         with dimension of (10,1). Then, 3 FC layer is used. These FC layers have 10,10 and 3 units. Final FC layer
         provides gaze direction g=[g_x , g_y] and a confidence score for gaze estimation.
         
-        During network training, cosine uncertanity loss function is used. 
+        During network training, cosine uncertanity loss function is used. The loss function can be observed below:
+        
+        ![cosine_loss.png](images/cosine_loss.png)
    
        
 
