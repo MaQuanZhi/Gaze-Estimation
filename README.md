@@ -223,6 +223,22 @@
            
            ![heat_loss.png](images/heat_loss.png)
            
+            Authors also find eyeball radius by appending 3 FC layer after soft-argmax to regress radius.
+           
+            Paper apply strong data augmentation to increase accuracy. Translation, rotation, intensity, blur, scale,
+            downscale-then upscale and addition lines for artificial occlusions.
+           
+        * Gaze estimation via Feature based approach
+        
+            Inner and outer eye corners are found (c1,c2). All detected landmarks coordinates are normalized with eye 
+            width (c2-c1) and center the coordinate system on c1. Also, a prior gaze estimation found by subtracting 
+            eyeball center from iris center and giving this as an feature improved final accuracy. 17 normalized
+            coordinates(8 limbus, 8 iris edge, 1 iris center) and prior estimation are used to find final feature vector
+            size of 18. Then, an SVR is trained to find gaze direction(yaw and pitch angles) 
+        
+            
+
+        * Gaze estimation vie Model based approach 
            
            
        
