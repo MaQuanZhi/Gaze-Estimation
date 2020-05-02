@@ -143,6 +143,45 @@
        
        ![recurrent_cnn.png](images/recurrent_cnn.png)
        
+       Problem is defined such that a calibrated camera is assumed, head pose information is known and gaze direction 
+       is estimated from sequence of image.
+       
+       Gaze direction is highly affected by head pose and eye images are not sufficient for gaze estimation. Whole face
+       images can encode head pose or illumination-specific information across larger areas and useful for gaze 
+       estimation. Also 68-landmark model is used to extract landmarks and these are also fed to network.
+       
+       Paper also applied data normalization to handle with appearance variability and person specific camera 
+       configuration problem. Paper said that perspective warping is applied to image and this provides following: 
+       all face image is extracted from a virtual camera whose x axis is parallel to head and distance between camera 
+       and head in z axis is constant. (I dont know details related to perspective warping???)
+       
+       Network is divided into 3 modules: Individual, Fusion and Temporal. Individual modules are used for feature 
+       extraction. It is applied to whole face image and joint normalized eye patches. Fusion module combines features 
+       of head and eye patches with landmarks points. Individual and Fusion modules are also referred as Static model.
+       Static model is applied to each frame. Resulting feature vectors from each frame are given as input to Temporal
+       module which is many-to-one Recurrent neural network. Gaze direction is estimated at the last frame by using a 
+       linear regression module which is added on top of recurrent network.
+       
+       Individual modules consist of VGG-16 deep network with 13 conv and 5 max pooling layer and 1 FC layer with ReLU.
+       After Fusion of face feature, eyes feature and facial landmarks , a single GRU with 128 units is used. VGG are 
+       pre-trained on VGG-Face dataset. Network is trained in stage-wise fashion. Firstly Static model and final 
+       regression layer is  trained end-to-end on each individual frame. Then, image sequences are constructed with 
+       s=4 frames. Individual layers are frozen and features of each frame is extracted. Then, Fusion layer is fined 
+       tuned , Temporal layer and regression layer are  trained to estimate gaze direction at the end of 4th frame. 
+       ADAM optimizer with 0.0001 learning rate is used. Dropout rate (used in Fusion layer) is set to 0.3 and batch 
+       size is 64. 21 epoch training is applied. Average euclidean distance is used for loss function.
+       Paper applied data augmentation during training such that: horizontal flip, shifts up to 5 pixels, zoom of 
+       up to 2%, brightness changes by a factor in the range of  [0.4,1.75] and additive Gaussian noise with variance 
+       of 0.03.
+   * Paper Results
+       - Paper result showed that data normalization improve accuracy. 
+       - Face,eyes and landmark inputs together outperform all other combinations. 
+       - Temporal information increases accuracy in floating case scenarios while there is not significant improvement 
+       for static case scenarios.
+
+       
+       
+       
    
    
    
