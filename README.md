@@ -81,6 +81,8 @@
        and glasses will provided annotations. Then eye-glasses region is removed from image and removed region is 
        filled by semantic image inpainting. Paper claims that inpaining improves gaze estimation accuracy. 
        The block diagram of proposed method can be seen below:
+       
+       ![rt_gene_diag.png](images/rt_gene_diag.png)
 
    
    
