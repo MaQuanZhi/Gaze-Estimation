@@ -197,6 +197,15 @@
        model approaches.
        
        * Eye Region Landmarks Localization via Hour Glass Network
+           
+           Hourglass architecture is firstly designed for human pose estimation. Hourglass architecture tries to 
+           capture long-range context by performing repeated improvement of proposed solutions at multiple scales, 
+           using so-called “hourglass modules”. Hourglass modules downscaled via pooling operations and then upscaled 
+           using bilinear interpolation. At every scale level, a residual is calculated and applied via skip connection 
+           from the corresponding layer on the other side of the hourglass. Thus for given feature maps , network refines
+           them at 4 different image scales, multiple times. This repeated bottom-up, top-down inference ensures a large
+           effective receptive field and allows for the encoding of spatial relation between landmarks, even under
+           occlusion.
        
    
 ### b) Datasets
