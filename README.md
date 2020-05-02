@@ -174,10 +174,15 @@
        up to 2%, brightness changes by a factor in the range of  [0.4,1.75] and additive Gaussian noise with variance 
        of 0.03.
    * Paper Results
+   
+       Network reaches 3.4 degree angular error over Eye-Diap dataset and following results obtained from studies:
+       
        - Paper result showed that data normalization improve accuracy. 
        - Face,eyes and landmark inputs together outperform all other combinations. 
        - Temporal information increases accuracy in floating case scenarios while there is not significant improvement 
        for static case scenarios.
+       
+       
 
        
        
