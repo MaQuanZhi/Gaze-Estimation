@@ -182,13 +182,12 @@
        - Temporal information increases accuracy in floating case scenarios while there is not significant improvement 
        for static case scenarios.
        
+### 4. Learning to Find Eye Region Landmarks for Remote Gaze Estimation in Unconstrained Settings(ETRA-2018)
        
-
+   - Paper Repository: https://github.com/swook/GazeML
+   - Paper Link: https://ait.ethz.ch/projects/2018/landmarks-gaze/downloads/park2018etra.pdf
        
        
-       
-   
-   
    
 ### b) Datasets
 ![datasets.png](images/datasets.png)
