@@ -221,6 +221,8 @@
            For each ground truth landmark location ground truth heat map is constructed by placing a 2D gaussian which
            reaches peak at correct location. Then loss function is designed s.t.:
            
+           ![heat_loss.png](images/heat_loss.png)
+           
            
            
        
