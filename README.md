@@ -119,7 +119,7 @@
    
        Paper reaches 4.3 +- 0.9 degree erro ove MPII Gaze Dataset and 5.1 +- 0.2 degree error over UT Multiview dataset.
        
-
+### 3. Recurrent CNN for 3D Gaze Estimation using Appearance and Shape Cues (BMVA-2018)
 
    
    
