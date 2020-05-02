@@ -53,6 +53,10 @@
         when angular error is large.
         
    * Paper Results
+        Results over GazeFollow dataset can be seen below:
+        ![numerical_results.phn](images/numerical_results.png)
+        
+        ![image_results.png](images/image_results.png)
    
        
 
