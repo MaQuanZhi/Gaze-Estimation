@@ -3,7 +3,7 @@
 
 ### 1. Gaze Estimation for Assisted Living Environments(WACV-2020)
     
-   - Paper Repostiyory: https://bitbucket.org/phil_dias/gaze-estimation/src/master/
+   - Paper Repository: https://bitbucket.org/phil_dias/gaze-estimation/src/master/
    - Paper Link: http://openaccess.thecvf.com/content_WACV_2020/papers/Dias_Gaze_Estimation_for_Assisted_Living_Environments_WACV_2020_paper.pdf
     
    - Contributions
@@ -36,6 +36,11 @@
         network. Unit can be observed below:
         
         ![CGU](images/CGU.png)
+        
+        Here, ci is the confidence score and qi is the x or y coordinates. For 5 coordinates of eyes,ears and nose
+        10 CGU are used at input. Each (x,c) and (y,c) pair is fed to these 10 units. These results a feature vector 
+        with dimension of (10,1). Then, 3 FC layer is used. These FC layers have 10,10 and 3 units. Final FC layer
+        provides gaze direction g=[g_x,g_y] and a confidence score for gaze estimation.
    
        
 
