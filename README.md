@@ -31,6 +31,11 @@
         
         In occlusion cases, OpenPose results with 0 coordinates for x and y axes and confidence score. Since head
         head centroid is located at (0,0), confidence score 0 has a crucial role in indicating absence of keypoint.
+        
+        Authors introduced a Confidence Gated Unit to fuse confidence score with coordinates at the input of neural 
+        network. Unit can be observed below:
+        
+        ![CGU](images/CGU.png)
    
        
 
