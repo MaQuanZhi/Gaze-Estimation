@@ -68,6 +68,15 @@
    - Paper Repository: https://github.com/Tobias-Fischer/rt_gene
    - Paper Link: http://openaccess.thecvf.com/content_ECCV_2018/papers/Tobias_Fischer_RT-GENE_Real-Time_Eye_ECCV_2018_paper.pd
    
+   - Contributions
+   
+       Authors contributions are s.t.:
+       
+       * A method for gaze dataset generation with eye-tracking glasses
+       * A neural network for gaze estimation which reach to state-of-the-art results
+
+   * Proposed Approach
+   
 ### b) Datasets
 ![datasets.png](images/datasets.png)
 
