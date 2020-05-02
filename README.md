@@ -88,8 +88,23 @@
        Deep learning based methods have different approcahes for gaze estimation. In these approaches, inputs
        of the network can change. 
        - Eye patches can be directly feed to a CNN for gaze estimation
-       - Eye patches and head pose information can be used for estimation purpose
-       - Eye patches, face image can be used for estimation purpose
+       - Eye patches and head pose information can be used for gaze estimation
+       - Eye patches, face image can be used for gaze estimation
+       
+       Paper used MTCNN network to detect face along with landmarks point of the eyes,nose and mouth corners. 
+       By using extracted landmarks, face patch is rotated and scaled to minimize distance between the aligned 
+       landmarks and predefined average face point positions. This provides a normalized face image.(accelerated 
+       iterative closest point algorithm is used for normalization). Then, by using eye corners, eye patches are 
+       extracted from normalized face image(fixed sized rectangles centered around landmarks). Also, head pose is 
+       estimated by adopting the methods used in [Head pose estimation in the wild using convolutional neural 
+       networks and adaptive gradient methods].
+       
+       After extraction of eye patches, each eye image is fed to VGG-16 network for feature extraction. 
+       A FC layer of size 512 is used after last max pooling layer of VGG-16 and FC is followed by batch normalization 
+       and ReLU layer. FC layers coming from eye patches are combined and it has size of 1024. This final layer is 
+       followed another FC with size of 512. This final FC layer size of 512 is combined with head pose information and 
+       it is followed two more FC layer with size of 512 and 2 . Final 2 output gives yaw and pitch angle of gaze 
+       direction.
 
    
    
