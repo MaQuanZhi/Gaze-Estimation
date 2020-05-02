@@ -206,6 +206,11 @@
            them at 4 different image scales, multiple times. This repeated bottom-up, top-down inference ensures a large
            effective receptive field and allows for the encoding of spatial relation between landmarks, even under
            occlusion.
+           
+           Network pipeline can be seen in figure given below:
+           
+           ![hourglass.png](images/hourglass.png)
+           
        
    
 ### b) Datasets
