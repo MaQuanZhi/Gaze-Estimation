@@ -211,6 +211,18 @@
            
            ![hourglass.png](images/hourglass.png)
            
+           Paper adapt the original architecture to task of landmark detection in eye-images. 64 refined feature maps
+           combined via 1x1 convolutional layer to produce 18 heatmaps, each representing the estimated location of 
+           a particular eye region landmark. Paper used 3 hourglass modules (with 1 residual module per stage). 
+           Single eye image with size of 150x90(from UnityEyes) is used and 18 feature maps size of (75x45) is generated. 
+           18 feature maps find 8 limbus region point, 8 iris edge point, 1 iris center and 1 eye-ball center. 18 feature
+           maps are given to soft-argmax to find landmark points and then these points are fed to gaze estimation methods.
+           
+           For each ground truth landmark location ground truth heat map is constructed by placing a 2D gaussian which
+           reaches peak at correct location. Then loss function is designed s.t.:
+           
+           
+           
        
    
 ### b) Datasets
