@@ -125,8 +125,23 @@
    - Paper Link: http://www.bmva.org/bmvc/2018/contents/papers/0871.pdf
    
    - Contributions
+   
        Authors provide an approach for gaze estimation which depends on temporal information. The paper claim is that
        this is the first attempt of using temporal information in gaze estimation problem.
+
+   * Proposed Approach
+       Current studies mostly focus on static cases for gaze direction estimation. This paper focused on floating cases
+       and claim that using image sequence(containing images from different time instances) can improve estimation 
+       accuracy for floating case. For this reason a Recurrent-CNN network architecture is proposed.
+       
+       Paper divided related works into two category such that model-based and appearance-based. Model-based methods 
+       uses geometric model of the eye and usually requires high resolution images and person specific calibration.
+       Appearance-based methods finds direct mapping from eye images to gaze direction. CNN is the state-of-the art 
+       mapping strategy for  appearance based methods.
+       
+       Proposed architecture by paper can be seen figure given below:      
+       
+   
    
    
 ### b) Datasets
