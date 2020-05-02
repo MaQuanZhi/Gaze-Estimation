@@ -52,7 +52,7 @@
         uncertanity increases to decrease loss value. In this way, a higher network results with higher uncertanity
         when angular error is large.
         
-    * Paper Results
+   * Paper Results
    
        
 
