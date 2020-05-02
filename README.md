@@ -139,7 +139,9 @@
        Appearance-based methods finds direct mapping from eye images to gaze direction. CNN is the state-of-the art 
        mapping strategy for  appearance based methods.
        
-       Proposed architecture by paper can be seen figure given below:      
+       Proposed architecture by paper can be seen in figure given below:
+       
+       ![recurrent_cnn.png](images/recurrent_cnn.png)
        
    
    
