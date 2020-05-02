@@ -186,7 +186,17 @@
        
    - Paper Repository: https://github.com/swook/GazeML
    - Paper Link: https://ait.ethz.ch/projects/2018/landmarks-gaze/downloads/park2018etra.pdf
+
+   - Contributions
+       - Provides an approach which combines conventional methods and the latest appearance based methods
+    
+   * Proposed Approach
+       In previous feature and model based approaches feature extraction was done with hand-crafted techniques. 
+       Paper tries to extract accurate eye region landmarks by using CNNs with synthetic eye images. Then, authors 
+       try to estimate gaze direction by using these accurate eye region landmarks and conventional feature and 
+       model approaches.
        
+       * Eye Region Landmarks Localization via Hour Glass Network
        
    
 ### b) Datasets
