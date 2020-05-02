@@ -121,6 +121,12 @@
        
 ### 3. Recurrent CNN for 3D Gaze Estimation using Appearance and Shape Cues (BMVA-2018)
 
+   - Paper Repository: https://github.com/crisie/RecurrentGaze
+   - Paper Link: http://www.bmva.org/bmvc/2018/contents/papers/0871.pdf
+   
+   - Contributions
+       Authors provide an approach for gaze estimation which depends on temporal information. The paper claim is that
+       this is the first attempt of using temporal information in gaze estimation problem.
    
    
 ### b) Datasets
