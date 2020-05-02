@@ -105,9 +105,25 @@
        followed another FC with size of 512. This final FC layer size of 512 is combined with head pose information and 
        it is followed two more FC layer with size of 512 and 2 . Final 2 output gives yaw and pitch angle of gaze 
        direction.
+       
+       Data augmentation is applied. Eye patches are downsampled with ½ and ¼ and then converted to original size by using
+       bilinear interpolation. For various lighting conditions, histogram equalization(???) is applied. Color images also
+       converted to gray scale images so that gray-scale images also can be used.
+       
+       As loss function, l2 norm losses between predicted and ground truth gaze vectors are used. The weights of 
+       head pose estimation network is fixed and pre-trained model is used. VGG-16 pre-trained on ImageNet is used. 
+       FC layer weights are initialized by Xavier initialization. Adam optimizer is used with learning rate of 0.001,
+       b1=0.9,b2=0.95 and batch size of 256.
+       
+
 
    
    
 ### b) Datasets
 ![datasets.png](images/datasets.png)
+
+### c) Competitions 
+### i.   MPII Gaze Dataset
+### ii.  UT Multiview
+### iii. Eye-Diap
 
