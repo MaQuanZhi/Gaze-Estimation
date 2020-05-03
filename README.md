@@ -270,6 +270,15 @@
         The main idea of the proposed method can be seen in figure given below:
                         ![unsupervised_gaze.png](images/unsupervised_gaze.png)
         
+        The aim of proposed method  to jointly learn a representation network G and a redirection network R so that
+        difference delta_r = r_i - r_o = G(I_i) - G(I_o) between the extracted gaze representations indicated the gaze
+        change to be used by the redirection network to generate a redirection image I_red which is as close as possible
+        to I_o.
+        
+        A more detailed framework can be seen below:
+        
+        
+        
 ### b) Datasets
 ![datasets.png](images/datasets.png)
 
