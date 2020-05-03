@@ -380,7 +380,22 @@
        then updated weights are used for testing purpose. Clibration update formula during test can be seen below:
        
        ![formula3.png](images/formula3.png)
-
+       
+   * Paper Results
+   
+     Paper results clearly shows that using meta - few shot learning strategy avoids overfitting and fine-tuning over 
+     meta learning increases accuracy. 
+     
+     Paper results shows that using disentangling of latent code approach decreases error from 5.67 to 4.8 compared to
+     an vanilla encoder with meta learning approach.
+     
+     Paper shows that adding gaze loss and embeding consistency loss terms to l1 norm loss decreases error by amount of 
+     %36.
+     
+     ....
+     
+     
+     
 ### b) Datasets
 ![datasets.png](images/datasets.png)
 
