@@ -352,8 +352,15 @@
         
         Two images are fed to network given above. After encoder step, latent code divided three. Rotation angle of head
         and eye between two image is known since ground truth is available. Rotation is applied to part corresponds to
-        head pose angle and gaze direction angle and then second image is tried to bu constructed by using thus transformed
-        latent code. In this way, latent code is disentagled to three part, apperance, gaze, head. 
+        head pose angle and gaze direction angle and then second image is tried to be constructed by using this transformed
+        latent code. In this way, latent code is disentagled to three part, apperance, gaze, head.
+        
+        The loss function is construted with three part. The first one is direct l1 norm loss. l1 norm difference between
+        target image and reconstructed image is used. The second loss term is embedding consistency loss. The images of same
+        person should result with similar latent code besides of gaze direction part. For this reason after encoding part,
+        gaze direction code is translated to frontal side and final code is used to construct an embedding consistency loss.
+        The images from the same person used during this loss term. The final loss term is gaze direction loss. An MLP added
+        after gaze code part, and difference between ground truth and MLP output is also added to total loss function.
 
 ### b) Datasets
 ![datasets.png](images/datasets.png)
