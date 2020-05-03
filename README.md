@@ -248,8 +248,22 @@
             ![model_based.png](images/model_based.png)
            
 ### 5. Unsupervised Representation Learning for Gaze Estimation
-
-       
+   - Paper Repository: --------
+   - Paper Link: https://arxiv.org/pdf/1911.06939.pdf
+    
+   - Contributions
+        - Unsupervised gaze representation learning:
+            An approach to learn low dimensional gaze representations without gaze annotations, relying on a gaze 
+            redirection network and loss functions in image domain. This is the first work of unsupervised gaze
+            representation learning.
+        - Warping field regularization:
+            Paper rely on an inverse warping field w to perform gaze redirection. This paper proposed a warping field
+            regularization which not only prevents possible overfitting or distortions but also give a physical meaning 
+            to the components of the learned unsupervised gaze representations.
+            
+        - Head pose extensions: 
+            Proposed unsupervised method is not limited to gaze estimation but can also be used to process face images 
+            and learn a head pose related representation.
    
 ### b) Datasets
 ![datasets.png](images/datasets.png)
