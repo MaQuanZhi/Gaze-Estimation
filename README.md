@@ -264,7 +264,10 @@
         - Head pose extensions: 
             Proposed unsupervised method is not limited to gaze estimation but can also be used to process face images 
             and learn a head pose related representation.
-   
+            
+   * Proposed Approach
+        
+        The main idea of the proposed method can be seen in figure given below:
 ### b) Datasets
 ![datasets.png](images/datasets.png)
 
