@@ -304,6 +304,14 @@
             In its bottleneck part, the network also receives feature maps generated from the retargeting gaze information
             delta_r. The encoder ought to encode the eye structure(apperance) related information of aligned input image,
             while representation learning network should only learn to encode gaze change.
+           
+        - Few-Shot Gaze Estimation
+            After network is trained and representation learning network starts to provide information related to gaze 
+            direction, two steps applied to adapt for gaze direction estimation.
+            The first one is linear adaption. From a few annotated samples k_p,b_p and k_y, b_y are calculated for linear
+            adaption. Formulation for final gaze estimation is below:
+            
+            The second one is fine tuning using very few(~100) annotated samples for final accurate prediction.
         
         
         
