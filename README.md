@@ -347,6 +347,7 @@
         images. Authors disentangle the three factors by explicitly applying separate and known differences in rotations
         (eye gaze and head orientation) to the respective sub-codes. They refer to this architecture as the Disentangling
         Transforming Encoder-Decoder (DT-ED).
+        
         ![autoencoder.png](images/autoencoder.png)
         
         Two images are fed to network given above. After encoder step, latent code divided three. Rotation angle of head
