@@ -314,6 +314,10 @@
             ![linear_adaption.png](images/linear_adaption.png)
             
             The second one is fine tuning using very few(~100) annotated samples for final accurate prediction.
+            
+       
+   * To be added
+     Loss function details, warping field regularization, gaze representation dropout.... (This are advanced details..)
         
         
         
