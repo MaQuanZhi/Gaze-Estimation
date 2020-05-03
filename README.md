@@ -319,7 +319,11 @@
    * To be added
      Loss function details, warping field regularization, gaze representation dropout.... (This are advanced details..)
         
-        
+### 6. Few-Shot Adaptive Gaze Estimation
+   - Paper Repository: https://github.com/NVlabs/few_shot_gaze
+   - Paper Link: https://arxiv.org/pdf/1905.01941.pdf
+    
+   - Contributions
         
 ### b) Datasets
 ![datasets.png](images/datasets.png)
