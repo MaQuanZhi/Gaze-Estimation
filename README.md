@@ -334,10 +334,26 @@
    
    * Proposed Approach
    
-     - FAZE Framework
-       A person spesific gaze estimator must encode factors particular to the person. the first step in F AZE is to learn
-       a generalizable latent embedding space that encodes information pertaining to the gaze-direction, including 
-       person-specific aspects. 
+     - FAZE Framework:
+     
+         A person spesific gaze estimator must encode factors particular to the person. the first step in F AZE is to learn
+         a generalizable latent embedding space that encodes information pertaining to the gaze-direction, including 
+         person-specific aspects.
+         
+     - Gaze-Equivariant Feature Learning
+     
+        Authors extend the transforming encoder-decoder architecture to consider three distinct factors apparent in the 
+        setting: gaze direction, head orientation, and other factors related to the appearance of the eye region in given
+        images. Authors disentangle the three factors by explicitly applying separate and known differences in rotations
+        (eye gaze and head orientation) to the respective sub-codes. They refer to this architecture as the Disentangling
+        Transforming Encoder-Decoder (DT-ED).
+        ![autoencoder.png](images/autoencoder.png)
+        
+        Two images are fed to network given above. After encoder step, latent code divided three. Rotation angle of head
+        and eye between two image is known since ground truth is available. Rotation is applied to part corresponds to
+        head pose angle and gaze direction angle and then second image is tried to bu constructed by using thus transformed
+        latent code. In this way, latent code is disentagled to three part, apperance, gaze, head. 
+
 ### b) Datasets
 ![datasets.png](images/datasets.png)
 
