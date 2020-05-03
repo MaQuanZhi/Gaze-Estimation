@@ -277,6 +277,16 @@
         
         A more detailed framework can be seen below:
         
+        ![unsupervised_gaze_detailed.png](images/unsupervised_gaze_detailed.png)
+        
+        Redirection network does not take input images directly. An alignment network is used to align I_i to I_o.
+        After that, redirection network takes aligned image with delta_r information to produce target image.
+        
+        In the figure given in the right, detail of representation learning is given. Network output r is two dimensional.
+        This is beacuse of that gaze direction can be reprsented by yaw and pitch angle. Alls, data augmentation is applied
+        s.t random scale and translation. This avoids network to learn any landmark position and enforce it to learn gaze
+        direction.
+        
         
         
 ### b) Datasets
