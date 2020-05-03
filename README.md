@@ -361,6 +361,19 @@
         gaze direction code is translated to frontal side and final code is used to construct an embedding consistency loss.
         The images from the same person used during this loss term. The final loss term is gaze direction loss. An MLP added
         after gaze code part, and difference between ground truth and MLP output is also added to total loss function.
+        
+     - Person-specific Gaze Estimation
+     
+       Few-shot meta learning approach is applied for person spesific gaze estimation. Dataset is divided into two part s.t
+       training and test set. There is not overlapping person in training and test set. Then, during each iteration of meta
+       learning a person is chosen randomly and its images are divided into two set s.t. calibration and validation set.
+       In first step calibration set, in second step valdiation set is used. 
+       Formulation of weight update at n'th step of meta learning is given below:
+       
+       ![formula1.png](images/formula1.png)
+       ![formula2.png](images/formula2.png)
+       
+       These iterations continue until convergence to optimal weights.
 
 ### b) Datasets
 ![datasets.png](images/datasets.png)
