@@ -256,17 +256,25 @@
 ### c) Competitions 
 #### i.   MPII Gaze Dataset
    - RT-GENE: Real-Time Eye Gaze Estimation in Natural Environments (ECCV-2018)
+   
         4.3+-0.9 degree error
+        
    - It’s Written All Over Your Face: Full-Face Appearance-Based Gaze Estimation(2017)
+   
         4.8+-0.7 degree error
 
-#### ii.  UT Multiview
+#### ii.  UT Multiview Dataset
    - RT-GENE: Real-Time Eye Gaze Estimation in Natural Environments (ECCV-2018)
+   
         5.1+-0.2 degree error
+        
    - Appearance-Based Gaze Estimation in the Wild(2015)
+   
         5.9 degree error
-#### iii. Eye-Diap
+        
+#### iii. Eye-Diap Dataset
    - Recurrent CNN for 3D Gaze Estimation using Appearance and Shape Cues (BMVA-2018)
+   
         3.4 degree error
 
 
