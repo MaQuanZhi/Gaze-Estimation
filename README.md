@@ -324,7 +324,20 @@
    - Paper Link: https://arxiv.org/pdf/1905.01941.pdf
     
    - Contributions
-        
+   
+     * A novel framework for learning person-specific gaze networks with few calibration samples, fusing the benefits of
+       rotation-equivariant feature learning and meta-learning
+       
+     * A novel encoder-decoder architecture that disentangles gaze direction, head pose and appearance factors
+     
+     * A novel and effective application of meta-learning to the task of few-shot personalization
+   
+   * Proposed Approach
+   
+     - FAZE Framework
+       A person spesific gaze estimator must encode factors particular to the person. the first step in F AZE is to learn
+       a generalizable latent embedding space that encodes information pertaining to the gaze-direction, including 
+       person-specific aspects. 
 ### b) Datasets
 ![datasets.png](images/datasets.png)
 
