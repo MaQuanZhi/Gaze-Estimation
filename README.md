@@ -371,9 +371,15 @@
        Formulation of weight update at n'th step of meta learning is given below:
        
        ![formula1.png](images/formula1.png)
+       
        ![formula2.png](images/formula2.png)
        
        These iterations continue until convergence to optimal weights.
+       
+       During test, a few sample of person is used as calibration set. Weights are updated by using calibration set and
+       then updated weights are used for testing purpose. Clibration update formula during test can be seen below:
+       
+       ![formula3.png](images/formula3.png)
 
 ### b) Datasets
 ![datasets.png](images/datasets.png)
