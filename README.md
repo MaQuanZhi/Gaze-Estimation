@@ -311,7 +311,7 @@
             The first one is linear adaption. From a few annotated samples k_p,b_p and k_y, b_y are calculated for linear
             adaption. Formulation for final gaze estimation is below:
             
-            ![linear_adaption.png](images/linear_adaption.png)
+            ![linear_adoption.png](images/linear_adoption.png)
             
             The second one is fine tuning using very few(~100) annotated samples for final accurate prediction.
             
