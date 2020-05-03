@@ -255,6 +255,11 @@
 
 ### c) Competitions 
 #### i.   MPII Gaze Dataset
+     - RT-GENE: Real-Time Eye Gaze Estimation in Natural Environments (ECCV-2018)
+        4.3+-0.9 degree
+     - It’s Written All Over Your Face: Full-Face Appearance-Based Gaze Estimation(2017)
+        4.8+-0.7 degree
+
 #### ii.  UT Multiview
 #### iii. Eye-Diap
 
