@@ -241,6 +241,11 @@
             
 
         * Gaze estimation vie Model based approach 
+            
+            A simple human eye model is fitted to obtained landmarks. For this purpose, there is no requirements for 
+            camera parameters. Landmarks are unprojected in pixel units and then gaze estimation is done.
+            
+            ![model_based.png](images/model_based.png)
            
            
        
@@ -253,3 +258,12 @@
 #### ii.  UT Multiview
 #### iii. Eye-Diap
 
+
+### PAPER LIST
+#### 1. Gaze Estimation for Assisted Living Environments(WACV-2020)
+#### 2. RT-GENE: Real-Time Eye Gaze Estimation in Natural Environments (ECCV-2018)
+#### 3. Recurrent CNN for 3D Gaze Estimation using Appearance and Shape Cues (BMVA-2018)
+#### 4. Learning to Find Eye Region Landmarks for Remote Gaze Estimation in Unconstrained Settings(ETRA-2018)
+#### Unsupervised Representation Learning for Gaze Estimation
+#### Deep Pictorial Gaze Estimation
+#### Few-Shot Adaptive Gaze Estimation
