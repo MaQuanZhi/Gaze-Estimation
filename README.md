@@ -268,6 +268,7 @@
    * Proposed Approach
         
         The main idea of the proposed method can be seen in figure given below:
+        ![unsupervised_gaze.png](images/unsupervised.png)
 ### b) Datasets
 ![datasets.png](images/datasets.png)
 
