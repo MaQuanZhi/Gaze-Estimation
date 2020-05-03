@@ -234,7 +234,9 @@
             width (c2-c1) and center the coordinate system on c1. Also, a prior gaze estimation found by subtracting 
             eyeball center from iris center and giving this as an feature improved final accuracy. 17 normalized
             coordinates(8 limbus, 8 iris edge, 1 iris center) and prior estimation are used to find final feature vector
-            size of 18. Then, an SVR is trained to find gaze direction(yaw and pitch angles) 
+            size of 18. Then, an SVR is trained to find gaze direction(yaw and pitch angles).
+            
+            ![feature_based.png](images/feature_based.png)
         
             
 
