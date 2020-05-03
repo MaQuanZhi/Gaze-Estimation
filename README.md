@@ -282,10 +282,28 @@
         Redirection network does not take input images directly. An alignment network is used to align I_i to I_o.
         After that, redirection network takes aligned image with delta_r information to produce target image.
         
-        In the figure given in the right, detail of representation learning is given. Network output r is two dimensional.
-        This is beacuse of that gaze direction can be reprsented by yaw and pitch angle. Alls, data augmentation is applied
-        s.t random scale and translation. This avoids network to learn any landmark position and enforce it to learn gaze
-        direction.
+        - Representation Learning
+        
+            In the figure given in the right, detail of representation learning is given. Network output r is two
+            dimensional. This is beacuse of that gaze direction can be reprsented by yaw and pitch angle. Also,data
+            augmentation is applied s.t random scale and translation. This avoids network to learn any landmark 
+            position and enforce it to learn gaze direction.
+            
+        - Alignment Network
+            
+            Alignment network takes I_i and I_o as input and predicts the motion parameters(translation and relative
+            scale) between I_i and I_o. In the first few layers, the two images are processed by separate network 
+            branches with shared weights. Then the extracted image features are concatenated and further processed 
+            to predict the geometric parameters. Then, inverse warping field transforming applied to I_i to align it 
+            with I_o.(?????? Inverse warping, grid sampling)
+            
+        - Redirection Network
+        
+            The main part is an encoder-decoder network f_R trained to predict a warping field w which warps the aligned
+            input using a grid sampling operation(????) and synthesize a gaze redirection output I_red. 
+            In its bottleneck part, the network also receives feature maps generated from the retargeting gaze information
+            delta_r. The encoder ought to encode the eye structure(apperance) related information of aligned input image,
+            while representation learning network should only learn to encode gaze change.
         
         
         
