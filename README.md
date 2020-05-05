@@ -430,9 +430,10 @@
 #### 3. Recurrent CNN for 3D Gaze Estimation using Appearance and Shape Cues (BMVA-2018)
 #### 4. Learning to Find Eye Region Landmarks for Remote Gaze Estimation in Unconstrained Settings(ETRA-2018)
 
-#### Unsupervised Representation Learning for Gaze Estimation
+#### 5. Unsupervised Representation Learning for Gaze Estimation
+#### 6. Few-Shot Adaptive Gaze Estimation
 #### Deep Pictorial Gaze Estimation
-#### Few-Shot Adaptive Gaze Estimation
+
 
 
 #### Learning from Simulated and Unsupervised Images through Adversarial Training(2017)
